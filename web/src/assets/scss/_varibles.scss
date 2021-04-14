@@ -1,0 +1,89 @@
+//scss 变量 $xxx
+
+//定义变量 colors数组/对象  $colors: ()
+//1.数组形式  $colors:(a,b,c)
+//2.map 形式  $colors:({a:1,b:2,c:3})
+$colors: (
+  "primary": #db9e3f,
+  "primary-1":#805300,
+  "primary-2":#f4be19,
+  "red": #ff3636,
+  "info": #3863cf,
+  "danger":#791a16,
+  "blue": #4394e4,
+  "blue-1": #233a95,
+  "blue-2":#1e96ab,
+  "blue-3":#4d9cff,
+  "blue-4":#00ADFF,
+  "white": #fff,
+  "white-1": #eceef0,
+  "white-2": #fcfcfc,
+  "light": #f9f9f9,
+  "light1": #d4d9de,
+  "light-2": #f1f1f1,
+  "light-3": #e4e4e4,
+  "grey-0":#b6afa8,
+  "grey": #999,
+  "grey-1": #666,
+  "grey-2":#A2A2A2,
+  "grey-3":#9e9e9e,
+  "dark-2": #343440,
+  "dark-1": #333,
+  "dark": #222,
+  "black": #000
+);
+//border-color
+$border-color:(map-get($colors, 'light1'));
+//font size
+$base-font-size: 1rem;                              
+/* xxs:8px                  
+ xs 10px 
+ sm 12px
+ md 13px  
+ lg 14px
+ xl 16px
+*/
+$font-sizes: (
+  xxs: 0.6154,
+  xs: 0.7692, 
+  sm: 0.9231,
+  md: 1,
+  lg: 1.0769,
+  xl: 1.2308,
+  xxl: 1.3846,
+  xxxl: 1.5385
+);
+
+//主轴对齐方式 
+$flex-jc: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around
+);
+//交叉轴对齐方式 
+$flex-ai: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch:stretch
+);
+
+//spacing m/p 方位 top,right,bottom,left
+$spacing-types: (m: margin, p: padding);
+$spacing-directions: (
+  t: top,
+  r: right,
+  b: bottom,
+  l:left
+);
+$spacing-base-size: 1rem;
+$spacing-sizes: (
+  0: 0,
+  1:0.25,
+  2:0.5,
+  3:1,
+  4:1.5,
+  5:3
+);
